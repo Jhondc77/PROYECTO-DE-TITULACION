@@ -1,0 +1,170 @@
+body {
+  overflow-x: hidden; /* Desactiva el scroll horizontal */
+}
+form{
+ display: grid;
+ grid-template-columns: 1fr 1fr ;
+ margin: 10px;
+}
+#logo{
+  width: 110px;
+  height: 70;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.form-registro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+.list_matricula{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+ }
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+ /* Estilos del botón para desplegar el menú */
+ .navbar .toggle-btn {
+  cursor: pointer;
+  font-size: 35px;
+  margin-left: 5px;
+}
+
+
+#card-matricula{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Estilos de los elementos de menú */
+.navbar .menu a {
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+#container{
+  margin-top: 50px;
+}
+#tarjeta-secretario-regis{
+  position: relative;
+  margin-left: 260px;
+}
+#crear-user2{
+  position: static;
+}
+/*#tarjeta-periodo{
+  position: static;
+  top: -50px;
+  margin-left: 210px;
+  margin-right: 10px;
+}*/
+.navegacion-principal{
+  width: 300px;
+  height: 500px;
+  margin-right: 20px;
+}
+
+#tarjeta-matricula{
+  position: static;
+  margin-left: 210px;
+  margin-right: 10px;
+}
+/*#lista-matricula{
+  position: absolute;
+    margin-left: 5px;
+    left: 200px;
+    width: 1150px;
+   
+}*/
+#fondo{
+  left: 200px;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px); /* Ajusta el valor (5px) para aumentar o disminuir la cantidad de desenfoque */
+  background-color: rgba(255, 255, 255, 0.5); /* Cambia el valor alpha (0.5) para ajustar la opacidad del fondo */
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top:0px;
+}
+#container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+#user-card{
+  position: absolute;
+  top: 400px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  background-color:#D7DBDD;
+  justify-content: center;
+  font-size: 15px;
+  max-height: 80vh; /* Ajusta la altura máxima de la tarjeta */
+  overflow: auto; /* Añade un scroll si el contenido excede la altura */
+ 
+}
+#user-card #titulo h3{
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255,255, 255, 1);
+  /*border-bottom: 1px solid black;*/
+
+}
+
+
+
+#fondo_matricula{
+  left: 200px;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(1px); /* Ajusta el valor (5px) para aumentar o disminuir la cantidad de desenfoque */
+  background-color: rgba(255, 255, 255, 0.5); /* Cambia el valor alpha (0.5) para ajustar la opacidad del fondo */
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top:0px;
+}
+#container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+#form_matricula{
+  position: absolute;
+  top: 330px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  justify-content: center;
+  font-size: 15px;
+ 
+}
+#form_matricula #titulo-form h3{
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255,255, 255, 1);
+  /*border-bottom: 1px solid black;*/
+
+}
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
